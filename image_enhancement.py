@@ -29,7 +29,7 @@ class RealESRGANRunner:
             "-n", self.model_name,
             "-i", str(self.input_folder),
             "-o", str(self.output_folder),
-            "--outscale", str(self.outscale)
+            "--outscale", int(self.outscale)
         ]
         if self.face_enhance:
             cmd.append("--face_enhance")
