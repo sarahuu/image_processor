@@ -33,8 +33,8 @@ class RealESRGANRunner:
         ]
         if self.face_enhance:
             cmd.append("--face_enhance")
-        if self.device:
-            cmd.extend(["--device", self.device])
+        # if self.device:
+        #     cmd.extend(["--device", self.device])
         return cmd
 
     def run(self):
