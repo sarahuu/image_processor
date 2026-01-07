@@ -25,7 +25,7 @@ class RealESRGANRunner:
         """
         cmd = [
             "python",
-            "inference_realesrgan.py",
+            "Real-ESRGAN/inference_realesrgan.py",
             "-n", self.model_name,
             "-i", str(self.input_folder),
             "-o", str(self.output_folder),
